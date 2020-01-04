@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* Grid Layout
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300&display=swap");
+/* line 3, ../sass/partials/_grid-layout.scss */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* line 12, ../sass/partials/_grid-layout.scss */
+.col,
+.cols {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  /* line 21, ../sass/partials/_grid-layout.scss */
+  .container {
+    width: 85%;
+    padding: 0;
+  }
+}
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  /* line 30, ../sass/partials/_grid-layout.scss */
+  .container {
+    width: 80%;
+  }
+
+  /* line 34, ../sass/partials/_grid-layout.scss */
+  .col, .cols {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+  }
+
+  /* line 41, ../sass/partials/_grid-layout.scss */
+  .first {
+    width: 4.66666666667%;
+  }
+
+  /* line 45, ../sass/partials/_grid-layout.scss */
+  .second {
+    width: 13.3333333333%;
+  }
+
+  /* line 49, ../sass/partials/_grid-layout.scss */
+  .third {
+    width: 22%;
+  }
+
+  /* line 53, ../sass/partials/_grid-layout.scss */
+  .fourth {
+    width: 30.6666666667%;
+  }
+
+  /* line 57, ../sass/partials/_grid-layout.scss */
+  .fifth {
+    width: 39.3333333333%;
+  }
+
+  /* line 61, ../sass/partials/_grid-layout.scss */
+  .sixth {
+    width: 48%;
+  }
+
+  /* line 65, ../sass/partials/_grid-layout.scss */
+  .seventh {
+    width: 56.6666666667%;
+  }
+
+  /* line 69, ../sass/partials/_grid-layout.scss */
+  .eight {
+    width: 65.3333333333%;
+  }
+
+  /* line 73, ../sass/partials/_grid-layout.scss */
+  .ninth {
+    width: 74.0%;
+  }
+
+  /* line 77, ../sass/partials/_grid-layout.scss */
+  .tenth {
+    width: 82.6666666667%;
+  }
+
+  /* line 81, ../sass/partials/_grid-layout.scss */
+  .eleventh {
+    width: 91.3333333333%;
+  }
+
+  /* line 85, ../sass/partials/_grid-layout.scss */
+  .twelveth {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/* Base Styles
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+/* line 6, ../sass/partials/_base-styles.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 10, ../sass/partials/_base-styles.scss */
+body {
+  font-size: 1.5em;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: #252525;
+}
+
+/*
+* Chassis V1.0.0
+* Copyright 2020, Bello Samuel,
+* Adrites Multimedia
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+/* Table of contents
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô
+- Grid Layout
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/

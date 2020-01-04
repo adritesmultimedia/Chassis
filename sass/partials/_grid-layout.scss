@@ -1,0 +1,91 @@
+/* Grid Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.col,
+.cols {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+    .container {
+      width: 85%;
+      padding: 0;
+    }
+}
+
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+    .container {
+      width: 80%;
+    }
+  
+    .col, .cols{
+        width: 100%;
+        float: left;
+        box-sizing: border-box;
+      }
+        
+      
+      .first {
+        width: 4.66666666667%;
+      }
+      
+      .second {
+        width: 13.3333333333%;
+      }
+      
+      .third {
+        width: 22%;
+      }
+      
+      .fourth {
+        width: 30.6666666667%;
+      }
+      
+      .fifth {
+        width: 39.3333333333%;
+      }
+      
+      .sixth {
+        width: 48%;
+      }
+      
+      .seventh {
+        width: 56.6666666667%;
+      }
+      
+      .eight {
+        width: 65.3333333333%;
+      }
+      
+      .ninth {
+        width: 74.0%;
+      }
+      
+      .tenth {
+        width: 82.6666666667%;
+      }
+      
+      .eleventh {
+        width: 91.3333333333%;
+      }
+      
+      .twelveth {
+        width: 100%;
+        margin-left: 0;
+      }
+      
+
+}
