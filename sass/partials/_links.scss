@@ -1,0 +1,12 @@
+@import "variables";
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+    color: $default-blue;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+  }

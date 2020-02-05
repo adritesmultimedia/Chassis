@@ -1,0 +1,50 @@
+
+@import "variables";
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: $primary-color;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid $default-gray;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &:hover{
+    opacity: 0.8;
+    transition-duration: 0.5s;
+  }
+
+}
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: $default-blue;
+  border-color: $default-blue;
+
+  &:hover{
+    opacity: 0.8;
+    transition-duration: 0.5s;
+  }
+
+}
